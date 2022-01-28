@@ -1,0 +1,37 @@
+main
+{
+    margin-top: 150px;
+}
+
+.container
+{
+    margin:0px auto;
+    text-align: center;
+}
+
+.item
+{
+    border:5px solid ;
+    width: 200px;
+    height:200px;
+    margin:18px;
+    display: inline-block;
+    text-align: center;
+    background-color: cyan;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.item:hover
+{
+    transform: scale(1.1,1.1);
+    transition:0.2s;
+}
+
+@media screen and (max-width:800px)
+{
+    main
+    {
+        margin-top:210px;
+    }  
+}

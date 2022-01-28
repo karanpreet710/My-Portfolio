@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><b>Karanpreet Singh</b></a></li>
+            <div id="top">
+                <li><a class="selected" href="index.html">Home</a></li>
+                <li><a href="hobbies.html">My Hobbies</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="#outer">Contact Me</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div id="background">
+        <div id="main">
+            <div id="left">
+                <h1>Hi! I'm <span>Karanpreet</span> a frontend web developer</h1>
+                <p>I am a tech enthusiast, currently pursuing Btech from Netaji Subhas University of Technology, New
+                    Delhi. I am a C++ programmer. I explore and learn new web technologies and apply these technologies
+                    to create nice responsive websites.</p>
+            </div>
+            <img id="image" src="images/me.png" alt="My image" width="300px" height="300px" align="right">
+            <br>
+            <button><a href="hobbies.html">My Hobbies</a></button>
+            <button><a href="skills.html">Skills</a></button>
+        </div>
+    </div>
+    <div id="education">
+        <h2 align="center">Education</h2>
+        <div>
+            <img src="images/nsut.png" alt="nsut icon" width="100" height="100">
+            <p>
+                <b>Netaji Subhas University of Technology</b>
+                <br>
+                BTech in Computer Science(Data Science)
+                <br>
+                2020-2024
+            </p>
+        </div>
+        <hr>
+        <div>
+            <img src="images/ssms.jpg" alt="ssms icon" width="100" height="100">
+            <p>
+                <b>S.S. Mota Singh Senior Secondary Model School</b>
+                <br>
+                PCM with Computer Science(Class XIIth)
+                <br>
+                Year of passing-2020
+            </p>
+        </div>
+    </div>
+    <div id="project">
+        <h2 align="center">Do check out these projects!</h2>
+        <ul>
+            <li id="l1">
+                <p>A simple website created using HTML and CSS</p><button onclick="expand1()">Click to view</button>
+            </li>
+            <li id="l2">
+                <p>A simple registration form created using HTML,CSS and Javascript</p><button onclick="expand2()">Click
+                    to view</button>
+            </li>
+        </ul>
+    </div>
+    <div id="outer">
+        <h1 align="center">Contact Me</h1>
+        <form onsubmit="return validateForm();">
+            <input type="text" name="name" id="name" placeholder="Your name">
+            <br>
+            <br>
+            <input type="text" name="email" id="email" placeholder="Email address">
+            <br>
+            <br>
+            <input type="text" name="sub" id="sub" placeholder="Subject">
+            <br>
+            <br>
+            <textarea name="message" id="message" cols="60" rows="10" placeholder="Your message"></textarea>
+            <br>
+            <input type="submit" name="Submit" id="btn">
+        </form>
+    </div>
+    <div id="social">
+        <h1 align="center">Connect with me</h1>
+        <a href="https://github.com/karanpreet710" target="_blank">
+            <img src="images/github.png" alt="github icon" width="80" height="50">
+        </a>
+        <a href="https://www.linkedin.com/in/karanpreet-singh-3b3b95226/" target="_blank">
+            <img src="images/linkedin.png" alt="linkedin icon" width="50" height="50">
+        </a>
+        <a href="https://www.instagram.com/karanlm10/" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon" width="50" height="50">
+        </a>
+        <a href="mailto:singhkaranpreet710@gmail.com" target="_blank">
+            <img src="images/gmail.png" width="50" alt="mail icon" height="50">
+        </a>
+    </div>
+</body>
+</html>

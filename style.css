@@ -1,0 +1,402 @@
+body
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0px;
+    font-size: 20px;
+    background-color: lightgrey;
+}   
+
+h1,h2
+{
+    text-decoration: underline;
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+
+nav li
+{
+    display: inline-block;
+    margin:10px;
+}
+
+#top
+{
+    display: inline-block;
+    width:70%;
+    text-align: right;
+}
+
+nav
+{
+    padding:25px;
+    padding-left: 120px;    
+    position:fixed;
+    right:0px;
+    left:0px;
+    top:0px;
+    background-color: #333;
+    z-index:2;
+}
+
+
+a
+{
+    text-decoration: none;
+    color:white;
+}
+
+nav a:hover
+{
+    color:gainsboro;
+    text-decoration: underline;
+}
+
+.selected
+{
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+span
+{
+    color:blue;
+}
+
+#background
+{
+    background-image: url("images/back.jpg");
+    margin-top: 103px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background h1
+{
+    text-decoration: none;
+}
+
+#main
+{
+    text-align: left;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#left
+{
+    width: 50%;
+    display: inline-block;
+}
+
+#left p
+{
+    text-align:justify;
+}
+
+#image
+{
+    margin-top: 20px;
+    background-color: lightblue;
+    border-radius: 200px;
+}
+
+#image:hover
+{
+    position:relative;
+    top:-10px;
+    z-index:1;
+}
+
+button
+{
+    width:150px;
+    margin:10px;
+    padding:10px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: blueviolet;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+button:hover
+{
+    transform: translate(2px,2px);
+    transition: 0.2s;
+}
+
+#education
+{
+    background-color: white;
+}
+
+#education h2
+{
+    margin-top: 0px;
+    padding-top:10px;
+    margin-bottom: 5px;
+}
+
+#education p
+{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#project
+{
+    padding:10px;
+}
+
+#project h2
+{
+    margin-top:0px;
+    padding:10px;
+}
+
+#project p 
+{
+    display: inline-block;
+}
+
+#project ul
+{
+    list-style-type: square;
+}
+
+iframe
+{
+    width: 100%;
+}
+
+form
+{
+    width:80%;
+    margin:0px auto;
+    text-align: center;
+    padding:20px;
+}
+
+#name,#email,#sub
+{
+    width:45%;
+    height:30px;
+    border-radius: 5px;
+    border-width: 0px;
+    padding:10px;
+}
+
+textarea
+{
+    border-radius: 5px;
+    border-width: 0px;   
+    padding: 10px;
+    width:45%;
+}
+
+#name:focus,#email:focus,#sub:focus,textarea:focus
+{
+    outline:0;
+    border:1px solid black;
+}
+
+#btn
+{
+    color:white;
+    width:150px;
+    margin:10px;
+    padding:10px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: blueviolet;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#btn:hover
+{
+    transform: translate(2px,2px);
+    transition: 0.2s;
+}
+
+#outer
+{
+    background-color: rgb(170, 170, 170);
+}
+
+#outer h1
+{
+    margin-top: 0px;
+    padding-top:10px;
+    margin-bottom:10px; 
+}
+
+#social
+{
+    text-align: center;
+    color:white;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    background-color: rgb(100, 100, 100);
+}
+
+#social img
+{
+    margin:0 50px;
+}
+
+#social h1
+{
+    text-decoration: none;
+}
+
+a img:hover
+{
+    transform: scale(1.1,1.1);
+    transition:0.2s;
+}
+
+@media screen and (max-width:950px)
+{
+    #background h1
+    {
+        font-size: 35px;
+    }
+    #background p
+    {
+        font-size: 17px;
+    }
+    #background button
+    {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:810px)
+{
+    #project p
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    nav
+    {
+        padding: 25px;
+        height:150px;
+        font-size: 15px;
+    }
+    nav li
+    {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    #top
+    {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+    }
+    #background
+    {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:750px)
+{
+    #image
+    {
+        width:200px;
+        height:200px;
+    }
+}
+
+@media screen and (max-width:700px)
+{
+    #background h1
+    {
+        font-size: 30px;
+    }
+    #background p
+    {
+        font-size: 15px;
+    }
+    #social img
+    {
+        margin:0px 30px;
+    }
+}
+
+@media screen and (max-width:540px)
+{
+    #education
+    {
+        font-size:15px;
+        text-align: center;
+    }
+    #education img
+    {
+        width:80px;
+        height:80px;
+    }
+    #education p
+    {
+        display:block;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    #background h1
+    {
+        font-size: 20px;
+    }
+    #background p
+    {
+        font-size: 10px;
+    }
+    #image
+    {
+        width:150px;
+        height:150px;
+    }
+    #background
+    {
+        height: 300px;
+    }
+    #background button
+    {
+        font-size: 8px;
+        width:55px;
+        padding:5px;
+    }
+    #social img
+    {
+        margin:0px 30px;
+        width:50px;
+    }
+}
+
+@media screen and (max-width:380px)
+{
+    #image
+    {
+        height:120px;
+        width:120px;
+        margin-top:50px;
+    }
+}

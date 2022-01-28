@@ -1,0 +1,193 @@
+main
+{
+    margin-top: 150px;
+}
+
+#skills
+{
+    width:60%;
+    margin:0px auto;
+}
+
+#html,#css,#js,#sql,#cpp
+{
+    height:30px;
+    width:100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#html div
+{
+    height:30px;
+    width:85%;
+    background-color: red;
+}
+
+#css div
+{
+    height:30px;
+    width:75%;
+    background-color: lightgreen;
+}
+
+#js div
+{
+    height:30px;
+    width:70%;
+    background-color: lightcoral;
+}
+
+#sql div
+{
+    height:30px;
+    width:75%;
+    background-color:yellow;
+}
+
+#cpp div
+{
+    height:30px;
+    width:85%;
+    background-color: orange;
+}
+
+.percent
+{
+    text-align: center;
+    border-radius: 5px;
+}
+
+img
+{
+    width:100px;
+    height:100px;
+    margin-bottom: 10px;
+}
+
+.bar
+{
+    background-color: blueviolet;
+    padding:20px;
+    margin:50px;
+    border-radius: 10px;
+}
+
+.bar:hover
+{
+    transform: scale(1.1,1.1);
+    transition:0.2s;
+}
+
+.bar:hover #html div
+{
+    animation: grow1 2s linear;
+}
+
+.bar:hover #css div
+{
+    animation: grow2 2s linear;
+}
+
+.bar:hover #js div
+{
+    animation: grow3 2s linear;
+}
+
+.bar:hover #sql div
+{
+    animation: grow4 2s linear;
+}
+
+.bar:hover #cpp div
+{
+    animation: grow5 2s linear;
+}
+
+@keyframes grow1 
+{
+    0%
+    {
+        height:30px;
+        width:0%;
+    }
+    100%
+    {
+        height:30px;
+        width:85%;
+    }
+}
+
+@keyframes grow2 
+{
+    0%
+    {
+        height:30px;
+        width:0%;
+    }
+    100%
+    {
+        height:30px;
+        width:75%;
+    }
+}
+
+@keyframes grow3 
+{
+    0%
+    {
+        height:30px;
+        width:0%;
+    }
+    100%
+    {
+        height:30px;
+        width:70%;
+    }
+}
+
+@keyframes grow4
+{
+    0%
+    {
+        height:30px;
+        width:0%;
+    }
+    100%
+    {
+        height:30px;
+        width:75%;
+    }
+}
+
+@keyframes grow5 
+{
+    0%
+    {
+        height:30px;
+        width:0%;
+    }
+    100%
+    {
+        height:30px;
+        width:85%;
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    main
+    {
+        margin-top:210px;
+    }  
+}
+
+@media screen and (max-width:450px)
+{
+    img
+    {
+        width:70px;
+        height:70px;
+        margin-bottom: 10px;
+    }
+}
